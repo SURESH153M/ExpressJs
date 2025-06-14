@@ -20,7 +20,7 @@ app.use(session({
 }));
 
 // MongoDB connection (supports Docker and local)
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/hospitalDB';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://suresh5200g:<db_password>@cluster0.kbtexek.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
